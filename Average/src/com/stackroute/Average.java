@@ -1,25 +1,31 @@
 package com.stackroute;
+
 import java.util.Scanner;
+/*
+ *This class contains methods to calculate average
+ */
+
 class Average {
-    int number1;
-    int number2;
-    int number3;
+    int numberOne;
+    int numberTwo;
+    int numberThree;
+
     public float getAverage() {
-        return (number1 + number2 +number3)/3;
+        return (numberOne + numberTwo + numberThree) / 3;    //return average value to called function
 
     }
 }
-class Main {
+
+class TestAverage {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        Average obj = new Average();
+        Average average = new Average();
         System.out.println("Enter three numbers");
-        obj.number1 = reader.nextInt();
-        obj.number2 = reader.nextInt();
-        obj.number3 = reader.nextInt();
-        System.out.println("Average is "+obj.getAverage());
-
+        average.numberOne = reader.nextInt();
+        average.numberTwo = reader.nextInt();
+        average.numberThree = reader.nextInt();
+        System.out.println("Average is " + obj.getAverage());     //average is displayed
 
 
     }
